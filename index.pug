@@ -1,0 +1,230 @@
+doctype html 
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge" )
+        meta( name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous")
+        
+        title Red Store - pug version
+    body 
+        header(class="header")
+            .container 
+                include includes/nav
+                .row
+                    .col-2 
+                        h1 Give Your Workout
+                            <br> A New Style
+                        p success isn't always about greatness. it's about consistency. consistent
+                            <br> hard work gains 
+                            | success.
+                            | Greatness will come.
+                        a(href="#" class="btn") Explore Now &#8594
+                    .col-2 
+                        img( src="images/image1.png")
+        .categories
+            .small-container
+                .row 
+                    .col-3
+                        img(src="images/category-1.jpg")
+                    .col-3
+                        img(src="images/category-2.jpg")
+                    .col-3
+                        img(src="images/category-3.jpg")
+                    
+        .small-container 
+            h2(class="title") Featured products
+            .row 
+                .col-4 
+                    img(src="images/product-1.jpg")
+                    h4  Red Printed T-Shirt
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="far fa-star")
+                    p $50.0
+                .col-4 
+                    img(src="images/product-2.jpg")
+                    h4 HRX sports shoes
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star-half-alt")
+                    p $75.0
+                .col-4
+                    img(src="images/product-3.jpg")
+                    h4 HRX gray TRack pants
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star-half-alt")
+                    p $45.0
+                .col-4
+                    img(src="images/product-4.jpg")
+                    h4 Blue printed T-shirt
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="far fa-star")
+                    p $55.0
+            h2(class="title") latest products
+            .row 
+                .col-4 
+                    img(src="images/product-5.jpg")
+                    h4 Puma Gray sport shoes
+                    .rating 
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                    p $50.0
+                .col-4 
+                    img(src="images/product-6.jpg")
+                    h4 Black printed T-Shirt
+                    .rating 
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fa-star-half-alt")
+                    p $75.0
+                .col-4 
+                    img(src="images/product-7.jpg")
+                    h4 HRX set of 3 socks
+                    .rating 
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star-half-alt")
+                    p $45.0
+                .col-4 
+                    img(src="images/product-8.jpg")
+                    h4 Black Fossil watch
+                    .rating 
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                    p $55.0
+                .col-4 
+                    img(src="images/product-9.jpg")
+                    h4 Red Printed T-Shirt
+                    .rating 
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="far fa-star")
+                    p $50.0
+                .col-4 
+                    img(src="images/product-10.jpg")
+                    h4 HRX sports shoes
+                    .rating 
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star-half-alt")
+                    p $75.0
+                .col-4 
+                    img(src="images/product-11.jpg")
+                    h4 HRX gray TRack pants
+                    .rating 
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star-half-alt")
+                    p $45.0
+                .col-4 
+                    img(src="images/product-12.jpg")
+                    h4 Blue printed T-shirt
+                    .rating 
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="far fa-star")
+                    p $55.0
+        .exclusive 
+            .small-container
+                .row 
+                    .col-2 
+                        img(src="images/exclusive.png")
+                    .col-2
+                        p Exclusivly Available At Redstore
+                        h1 Smart Band 4
+                        small The Mi smart band 4 features a 39.9% larger (than Mi band 3) AMOLED color full-touch display with adjustable brightness. so everthing is clear as can be.
+
+                        a(href="#" class="btn") Buy Now &#8594;
+        .testemonials 
+            .small-container
+                .row
+                    .col-3.card
+                        i(class="fas fa-quote-left")
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu orci odio. Nulla varius
+                            |dictum placerat. Aliquam
+                            |at blandit nisi. Sed fringilla erat sed ligula.
+                        .rating 
+                            i(class="fas fa-star")
+                            i(class="fas fa-star")
+                            i(class="fas fa-star")
+                            i(class="fas fa-star")
+                            i(class="far fa-star")
+                        img(src="images/user-1.png" class="user-image")
+                        h3 Sean Parker
+                    .col-3.card
+                        i(class="fas fa-quote-left")
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu orci odio. Nulla varius
+                            |dictum placerat. Aliquam
+                            |at blandit nisi. Sed fringilla erat sed ligula.
+                        .rating 
+                            i(class="fas fa-star")
+                            i(class="fas fa-star")
+                            i(class="fas fa-star")
+                            i(class="fas fa-star")
+                            i(class="far fa-star")
+                        img(src="images/user-2.png" class="user-image")
+                        h3 Sean Parker
+                    .col-3.card
+                        i(class="fas fa-quote-left")
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu orci odio. Nulla varius
+                            |dictum placerat. Aliquam
+                            |at blandit nisi. Sed fringilla erat sed ligula.
+                        .rating 
+                            i(class="fas fa-star")
+                            i(class="fas fa-star")
+                            i(class="fas fa-star")
+                            i(class="fas fa-star")
+                            i(class="far fa-star")
+                        img(src="images/user-3.png" class="user-image")
+                        h3 Sean Parker
+        .brands
+            .small-container 
+                .row 
+                    .col-5 
+                        img( src="images/logo-godrej.png")
+                    .col-5 
+                        img( src="images/logo-oppo.png")
+                    .col-5 
+                        img( src="images/logo-coca-cola.png")
+                    .col-5 
+                        img( src="images/logo-paypal.png")
+                    .col-5 
+                        img(src="images/logo-philips.png")
+        include includes/footer
+        include includes/menu-item

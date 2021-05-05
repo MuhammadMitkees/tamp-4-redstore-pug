@@ -1,0 +1,115 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+    <title>Account - RedStore</title>
+  </head>
+  <body> 
+    <header> 
+      <div class="container"> 
+        <div class="navbar"><a href="index.html"><img src="images/logo.png" style="width: 125px;"/></a>
+          <nav class="nav">
+            <ul id="menuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li> <a href="#">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav><a href="cart.html"><img src="images/cart.png" width="30px" height="30px"/></a><img class="menu-icon" src="images/menu.png" onclick="menuToggle()"/>
+        </div>
+      </div>
+    </header>
+    <div class="account-page">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-2"> <img src="images/image1.png"/></div>
+          <div class="col-2"> 
+            <div class="formDiv">
+              <div class="form-btn"><span id="login" onclick="login()">Login</span><span id="register" onclick="register()">Register</span>
+                <hr id="indicator"/>
+              </div>
+              <form id="loginForm">
+                <input type="text" placeholder="Username"/>
+                <input type="password" placeholder="Password"/><br/>
+                <button class="btn">Login</button><a href="#">Forgot Password</a>
+              </form>
+              <form id="regForm">
+                <input type="text" placeholder="Username"/>
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Password"/>
+                <button class="btn">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="footer-col-1">
+            <h3>Download our app</h3>
+            <p>Download App for android and ios mobile phone</p><img class="footerDownload" src="images/play-store.png"/><img class="footerDownload" img="img" src="images/app-store.png"/>
+          </div>
+          <div class="footer-col-2"><img src="images/logo-white.png" id="logo-white"/>
+            <p>Our purpose is to sustainlbly Make the pleasure and Benifits of Sports accecible to many.</p>
+          </div>
+          <div class="footer-col-3"> 
+            <h3>Useful Links</h3>
+            <ul> 
+              <li>coupons</li>
+              <li>Blog post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4"> 
+            <h3>Follow Us</h3>
+            <ul> 
+              <li>Facebook</li>
+              <li>twitter</li>
+              <li>Youtube</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
+          <hr/>
+          <p class="copywrite">Copywrite 2021 - Muhammad Ali</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let menuItems = document.getElementById("menuItems");
+      menuItems.style.maxHeight = "0px";
+      
+      function menuToggle() {
+          if (menuItems.style.maxHeight == "0px") {
+              menuItems.style.maxHeight = "200px"
+          } else {
+              menuItems.style.maxHeight = "0px"
+          }
+      }
+    </script>
+    <script>
+      let loginForm = document.getElementById("loginForm");
+      let regForm = document.getElementById("regForm");
+      let indicator = document.getElementById("indicator");
+      let login = function () {
+          loginForm.style.transform = "translateX(300px)";
+          regForm.style.transform = "translateX(300px)";
+          indicator.style.transform = "translateX(0px)";
+      };
+      let register = function () {
+          loginForm.style.transform = "translateX(0px)";
+          regForm.style.transform = "translateX(0px)";
+          indicator.style.transform = "translateX(100px)";
+      
+      };
+    </script>
+  </body>
+</html>

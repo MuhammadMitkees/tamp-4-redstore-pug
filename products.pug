@@ -1,0 +1,160 @@
+doctype html 
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="style.css")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous")
+        title All Products - RedStore
+    body 
+        header  
+            .container
+                include includes/nav
+        .small-container
+            .row.row-2
+                h2.title-product All Products
+                select
+                    option Default sorting
+                    option Sort By Price
+                    option Sort By Popularity
+                    option Sort By Rating
+                    option Sort By Sale
+            .row
+                .col-4
+                    a(href="product-detail.html") 
+                        img(src="images/product-1.jpg")
+                    a(href="product-detail.html") 
+                        h4 Red Printed T-Shirt
+                    .rating 
+                        i( class="fas fa-star")
+                        i( class="fas fa-star")
+                        i( class="fas fa-star")
+                        i( class="fas fa-star")
+                        i( class="far fa-star")
+                    p $50.0
+                .col-4
+                    img(src="images/product-2.jpg")
+                    h4 HRX sports shoes
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star-half-alt")
+                    p $75.0
+                .col-4
+                    img(src="images/product-3.jpg")
+                    h4 HRX gray TRack pants
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="far fa-star")
+                    p $45.0
+                .col-4
+                    img(src="images/product-4.jpg")
+                    h4 Blue printed T-shirt
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="far fa-star")
+                    p $55.0
+            .row 
+                .col-4
+                    img(src="images/product-5.jpg")
+                    h4 Puma Gray sport shoes
+                    .rating 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="far fa-star")
+                    p $50.0
+                .col-4
+                    img(src="images/product-6.jpg")
+                    h4 Black printed T-Shirt
+                    .rating 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star-half-alt")
+                    p $75.0
+                .col-4
+                    img(src="images/product-7.jpg")
+                    h4 HRX set of 3 socks
+                    .rating 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star-half-alt")
+                    p $45.0
+                .col-4
+                    img(src="images/product-8.jpg")
+                    h4 Black Fossil watch
+                    .rating 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="far fa-star")
+                    p $55.0
+            .row 
+                .col-4
+                    img(src="images/product-9.jpg")
+                    h4 Red Printed T-Shirt
+                    .rating 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="far fa-star")
+                    p $50.0
+                .col-4
+                    img(src="images/product-10.jpg")
+                    h4 HRX sports shoes
+                    .rating 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star-half-alt")
+                    p $75.0
+                .col-4
+                    img(src="images/product-11.jpg")
+                    h4 HRX gray TRack pants
+                    .rating 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star-half-alt")
+                    p $45.0
+                .col-4
+                    img(src="images/product-12.jpg")
+                    h4 Blue printed T-shirt
+                    .rating 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="fas fa-star") 
+                        i(class="far fa-star")
+                    p $55.0
+            .btn-page
+                span 1
+                span 2
+                span 3
+                span 4
+                span &#8594;
+        include includes/footer
+        include includes/menu-item

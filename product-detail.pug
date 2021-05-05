@@ -1,0 +1,111 @@
+doctype html 
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="style.css")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous")
+        title All Products - RedStore
+    body 
+        header
+            .container
+                include includes/nav
+        .small-container.product-detail
+            .row
+                .col-2 
+                    img(src="images/gallery-1.jpg" width="100%" id="productImage")
+                    .small-image-row
+                        .small-img-col
+                            img(src="images/gallery-1.jpg" class="smallImage")
+                        .small-img-col
+                            img(src="images/gallery-2.jpg" class="smallImage")
+                        .small-img-col
+                            img(src="images/gallery-3.jpg" class="smallImage")
+                        .small-img-col
+                            img(src="images/gallery-4.jpg" class="smallImage")
+                .col-2 
+                    p  Home / T-shirt
+                    h1 Red Printed T-shirt By HRX
+                    h4 $50.0
+                    select
+                        option Select Size
+                        option XXL
+                        option XL
+                        option L
+                        option M
+                        option S
+                    input(type="number" value="1")
+                    a(href="#" class="btn") Add to cart
+                    h3 product dedtail 
+                         i(class="fas fa-indent")
+                    br
+                    p Give your summer wardrobe a style upgrade with the HRX men's active T-shirt. Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys.
+        .small-container
+            .row.row-2
+                h2 Related Products
+                p view more
+        .small-container
+            .row
+                .col-4 
+                    img(src="images/product-1.jpg")
+                    h4 Red Printed T-Shirt
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="far fa-star")
+                    p $50.0
+                .col-4 
+                    img(src="images/product-2.jpg")
+                    h4 HRX sports shoes
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star-half-al")
+                    p $75.0
+                .col-4 
+                    img(src="images/product-3.jpg")
+                    h4 HRX gray TRack pants
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star-half-alt")
+                    p $45.0
+                .col-4 
+                    img(src="images/product-4.jpg")
+                    h4 Blue printed T-shirt
+                    .rating
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="fas fa-star")
+                        i(class="far fa-star")
+                    p $55.0
+        include includes/footer
+        include includes/menu-item
+        script.
+            let productImage = document.getElementById("productImage");
+            let smallImage = document.getElementsByClassName("smallImage");
+            smallImage[0].onclick = function () {
+                productImage.src = smallImage[0].src
+            }
+            smallImage[1].onclick = function () {
+                productImage.src = smallImage[1].src
+            }
+            smallImage[2].onclick = function () {
+                productImage.src = smallImage[2].src
+            }
+            smallImage[3].onclick = function () {
+                productImage.src = smallImage[3].src
+            }

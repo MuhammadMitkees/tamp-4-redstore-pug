@@ -1,0 +1,57 @@
+doctype html 
+html(lang="en")
+    head 
+        meta(charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge")
+        meta( name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="style.css")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous")
+        title Account - RedStore
+    body 
+        header 
+            .container 
+                include includes/nav
+        .account-page
+            .container
+                .row 
+                    .col-2 
+                        img(src="images/image1.png")
+                    .col-2 
+                        .formDiv
+                            .form-btn
+                                span(id="login" onclick="login()") Login
+                                span(id="register" onclick="register()") Register
+                                hr(id="indicator")
+                            form(id="loginForm")
+                                input(type="text" placeholder="Username")
+                                input(type="password" placeholder="Password")
+                                br
+                                button(class="btn") Login
+                                a(href="#") Forgot Password
+                            form(id="regForm")
+                                input(type="text" placeholder="Username") 
+                                input(type="email" placeholder="Email") 
+                                input(type="password" placeholder="Password")
+                                button(class="btn") Register
+        include includes/footer
+        
+        include includes/menu-item
+        script.
+            let loginForm = document.getElementById("loginForm");
+            let regForm = document.getElementById("regForm");
+            let indicator = document.getElementById("indicator");
+            let login = function () {
+                loginForm.style.transform = "translateX(300px)";
+                regForm.style.transform = "translateX(300px)";
+                indicator.style.transform = "translateX(0px)";
+            };
+            let register = function () {
+                loginForm.style.transform = "translateX(0px)";
+                regForm.style.transform = "translateX(0px)";
+                indicator.style.transform = "translateX(100px)";
+
+            };
